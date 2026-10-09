@@ -1,0 +1,21 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--seed-dimension-x6);
+  row-gap: var(--seed-dimension-x4);
+  background-color: var(--seed-color-bg-layer-default);
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  column-gap: var(--seed-dimension-x3);
+}
+
+.count {
+  min-width: var(--seed-dimension-x16);
+  padding-bottom: 3px;
+}
