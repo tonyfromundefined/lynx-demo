@@ -5,7 +5,16 @@ ReactLynx와 SEED Design으로 만든 FEConf 시연용 카운터입니다.
 
 ## 실행
 
-Node.js `^20.19.0 || >=22.12.0`과 Yarn 4.18.1을 사용합니다.
+Node.js 24와 Yarn 4.18.1을 사용합니다. `.node-version`에는 메이저 버전 `24`만 지정합니다.
+
+fnm을 사용하는 경우 다음 명령으로 버전을 설치하고 적용합니다.
+
+```bash
+fnm install
+fnm use
+```
+
+셸에 `fnm env --use-on-cd`가 설정되어 있으면 프로젝트 폴더에 진입할 때 자동으로 적용됩니다.
 
 ```bash
 yarn install
