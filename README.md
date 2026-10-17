@@ -23,6 +23,18 @@ yarn dev
 
 터미널의 QR 코드를 Lynx 앱에서 스캔해 실행합니다. Lynx Engine 3.6 이상이 필요합니다.
 
+## Cloudflare Pages 배포
+
+빌드 명령은 `yarn build`, 출력 디렉터리는 `dist`를 사용합니다.
+`public/_headers`는 빌드 시 `dist/_headers`로 복사되며, `/main.lynx.bundle`에
+`Cache-Control: public, max-age=0, must-revalidate`를 적용합니다.
+
+CDN 캐시는 Pages의 기본 정적 자산 캐시를 사용합니다. 클라이언트가 저장한 ETag를
+`If-None-Match`로 보내면, 파일이 동일할 때 `304 Not Modified`로 본문 전송을 생략합니다.
+고정 파일명의 새 배포가 바로 반영되도록 별도의 장기 CDN TTL은 설정하지 않습니다.
+
+참고: [Cloudflare Pages 캐시 동작](https://developers.cloudflare.com/pages/configuration/serving-pages/)
+
 ## 검증
 
 ```bash
