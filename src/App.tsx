@@ -16,6 +16,7 @@ export function App() {
           variant="neutralSolid"
           size="medium"
           layout="iconOnly"
+          accessibility-label="감소"
           bindtap={() => {
             setCount((value) => value - 1);
           }}
@@ -27,6 +28,7 @@ export function App() {
           variant="neutralSolid"
           size="medium"
           layout="iconOnly"
+          accessibility-label="증가"
           bindtap={() => {
             setCount((value) => value + 1);
           }}

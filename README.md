@@ -5,7 +5,7 @@ ReactLynx와 SEED Design으로 만든 FEConf 시연용 카운터입니다.
 
 ## 실행
 
-Node.js 24와 Yarn 4.18.1을 사용합니다. `.node-version`에는 메이저 버전 `24`만 지정합니다.
+Node.js 24.15 이상(24.x)과 Yarn 4.18.1을 사용합니다. jsdom의 요구사항에 맞춘 최소 버전이며, `.node-version`에는 메이저 버전 `24`만 지정합니다.
 
 fnm을 사용하는 경우 다음 명령으로 버전을 설치하고 적용합니다.
 
