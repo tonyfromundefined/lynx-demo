@@ -5,9 +5,9 @@ import '@seed-design/lynx-css/recipes/action-button.css';
 import './App.css';
 import { root } from '@lynx-js/react';
 
-import { App } from './App.js';
+import { Root } from './Root.js';
 
-root.render(<App />);
+root.render(<Root />);
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept();

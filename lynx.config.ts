@@ -18,6 +18,7 @@ export default defineConfig({
     }),
     pluginReactLynx({
       engineVersion: '3.6',
+      globalPropsMode: 'event',
     }),
     pluginLynxIcon({
       include: /node_modules\/@karrotmarket\/assets-monochrome\/svg\//,
