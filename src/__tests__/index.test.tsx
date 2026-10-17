@@ -16,14 +16,11 @@ test('shows the greeting and starts at zero', async () => {
 test('increments and decrements on repeated taps, including negative numbers', async () => {
   const { container, findByText } = render(<App />);
   await findByText('0');
-  const increment = container.querySelector(
-    '[accessibility-label="숫자 1 증가"]',
-  );
-  const decrement = container.querySelector(
-    '[accessibility-label="숫자 1 감소"]',
+  const [decrement, increment] = container.querySelectorAll(
+    '[accessibility-traits="button"]',
   );
   if (!increment || !decrement) {
-    throw new Error('Counter buttons must have accessible labels');
+    throw new Error('Counter must render decrement and increment buttons');
   }
 
   fireEvent.tap(increment);

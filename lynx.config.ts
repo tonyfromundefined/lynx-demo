@@ -9,11 +9,16 @@ export default defineConfig({
   plugins: [
     pluginQRCode({
       schema(url) {
-        // We use `?fullscreen=true` to open the page in LynxExplorer in full screen mode
-        return `${url}?fullscreen=true`;
+        const searchParams = new URLSearchParams();
+        searchParams.set('url', url);
+        return {
+          LynxExplorer: `lynx://open?${searchParams.toString()}`,
+        };
       },
     }),
-    pluginReactLynx({ engineVersion: '3.6' }),
+    pluginReactLynx({
+      engineVersion: '3.6',
+    }),
     pluginLynxIcon({
       include: /node_modules\/@karrotmarket\/assets-monochrome\/svg\//,
     }),

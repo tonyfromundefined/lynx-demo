@@ -3,16 +3,14 @@ import {
   IconPlusFill,
 } from '@karrotmarket/lynx-monochrome-icon';
 import { useState } from '@lynx-js/react';
-import { ActionButton, Icon, Text } from '@seed-design/lynx-react';
+import { ActionButton, Icon } from '@seed-design/lynx-react';
 
 export function App() {
   const [count, setCount] = useState(0);
 
   return (
     <view className="app">
-      <Text fontSize="t12" fontWeight="bold" color="fg.neutral" align="center">
-        Hello, FEConf
-      </Text>
+      <text className="title">Hello, FEConf</text>
       <view className="counter">
         <ActionButton
           variant="neutralSolid"
@@ -24,16 +22,7 @@ export function App() {
         >
           <Icon icon={<IconMinusFill />} size="x5" />
         </ActionButton>
-        <view className="count">
-          <Text
-            fontSize="t13"
-            fontWeight="bold"
-            color="fg.neutral"
-            align="center"
-          >
-            {count}
-          </Text>
-        </view>
+        <text className="count">{count}</text>
         <ActionButton
           variant="neutralSolid"
           size="medium"

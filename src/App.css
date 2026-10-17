@@ -15,7 +15,21 @@
   column-gap: var(--seed-dimension-x3);
 }
 
+.title,
+.count {
+  color: var(--seed-color-fg-neutral);
+  font-weight: var(--seed-font-weight-bold);
+  text-align: center;
+}
+
+.title {
+  font-size: var(--seed-font-size-t12);
+  line-height: var(--seed-line-height-t12);
+}
+
 .count {
   min-width: var(--seed-dimension-x16);
   padding-bottom: 3px;
+  font-size: var(--seed-font-size-t13);
+  line-height: var(--seed-line-height-t13);
 }

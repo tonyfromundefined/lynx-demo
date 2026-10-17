@@ -1,6 +1,7 @@
 {
   "name": "feconf-lynx-demo",
   "version": "1.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
     "build": "rspeedy build",
@@ -33,9 +34,8 @@
     "jsdom": "^27.4.0",
     "typescript": "^6.0.3"
   },
+  "packageManager": "yarn@4.18.1",
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
-  },
-  "private": true,
-  "packageManager": "yarn@4.18.1"
+  }
 }
